@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Role Clipboard</title>
+        <link rel="stylesheet" href="/src/output.css"> 
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+            
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-50">
+        <header>
+        <nav class="h-24 bg-slate-100 w-full flex items-center justify-between"> 
+            <div class="text-black text-3xl p-10 font-bold">
+                Role Clipboard
+            </div>
+            <div class="flex space-x-10"> 
+                <div class="text-black text-2xl p-4 font-medium"><a href="index.html#Home">Home</a></div>
+                <!-- <div class="text-black text-2xl p-4 font-medium">About</div> -->
+                <div class="text-black text-2xl p-4 font-poppins pr-16 font-medium">
+    <a href="index.html#Services" class="relative inline-block transition-transform duration-300 hover:scale-110 hover:text-red-500">
+        Services
+        <span class="absolute left-0 bottom-0 h-0.5 w-full bg-red-500 transform scale-x-0 transition-transform duration-300 hover:scale-x-100"></span>
+    </a>
+</div>
+
+        </nav>
+        </header>
+
+        <div class="container mx-auto py-10 max-w-2xl">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="bg-gray-100 p-4">
+                <h1 class="text-2xl font-bold text-center">Question <span id="currentQuestionIndex">1</span> of 10</h1>
+            </div>
+            <div class="p-6">
+                <div class="w-full mb-6">
+                <div class="h-2 bg-blue-500" style="width: 0%;" id="progress-bar"></div>
+                </div>
+                <h2 class="text-xl font-semibold mb-4" id="question-text">What is the capital of France?</h2>
+                <div class="flex items-center space-x-2 mb-2 question-option">
+                <input type="radio" id="option-0" name="answer" value="London" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
+                <label for="option-0" class="text-gray-700">London</label>
+                </div>
+                <div class="flex items-center space-x-2 mb-2 question-option">
+                <input type="radio" id="option-1" name="answer" value="Berlin" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
+                <label for="option-1" class="text-gray-700">Berlin</label>
+                </div>
+                <div class="flex items-center space-x-2 mb-2 question-option">
+                <input type="radio" id="option-2" name="answer" value="Paris" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
+                <label for="option-2" class="text-gray-700">Paris</label>
+                </div>
+                <div class="flex items-center space-x-2 mb-2 question-option">
+                <input type="radio" id="option-3" name="answer" value="Madrid" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
+                <label for="option-3" class="text-gray-700">Madrid</label>
+                </div>
+            </div>
+            <div class="flex justify-between p-4 bg-gray-100">
+                <button class="bg-transparent border border-gray-300 text-gray-700 py-2 px-4 rounded-lg" id="previous-button" disabled>
+                <span class="mr-2">&#8592;</span> Previous
+                </button>
+                <button class="bg-blue-500 text-black py-2 px-4 rounded-lg" id="next-button">
+                Next <span class="ml-2">&#8594;</span>
+                </button>
+            </div>
+            </div>
+        </div>
+        
+    </body> 
+    <script src="football.js"></script>     
+    </html>  
