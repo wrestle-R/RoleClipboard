@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Clipboard</title>
+    <link rel="stylesheet" href="/src/output.css"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="h-24 bg-slate-100 w-full flex items-center justify-between"> 
+        <div class="text-black text-3xl p-10 font-poppins font-bold">
+            <a href="index.html">Role Clipboard</a>
+        </div>
+        <div class="flex space-x-10"> 
+            <div class="text-black text-2xl p-4 font-poppins font-medium">
+              <a href="index.html#Home">Home</a>
+            </div>
+            <!-- <div class="text-black text-2xl p-4 font-poppins font-medium">About</div> -->
+            <div class="text-black text-2xl p-4 font-poppins pr-16 font-medium ">
+              <a href="index.html#Services">Services</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    
+    <div class="relative h-[48rem] bg-cover bg-center" id="Home" style="background-image: url('/images/home1.jpg');">
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div> <!-- Darker overlay -->
+      <div class="flex flex-col items-center justify-center h-full">
+          <div class="bg-white bg-opacity-30 rounded-lg shadow-lg p-6 mb-64 ml-96"> <!-- Dialog box -->
+              <div class="text-black-700 text-2xl font-semibold">
+                  <p>Find your perfect role</p>
+              </div>
+              <div class="text-3xl pb-4 pt-3 text-black"> <!-- Changed text color for contrast -->
+                  Discover your ideal sports position
+              </div>
+              <button class="h-12 bg-red-700 text-white font-semibold py-2 px-4 rounded hover:bg-red-600 transition duration-200 transform hover:scale-105">
+                  <a href="index.html#Services">View Services</a>
+              </button>
+          </div>
+      </div>
+  </div>
+
+  
+  <!-- <div class="flex w-full h-auto items-center py-12">
+    <div class="w-1/2 px-12 ml-20">
+      <p class="text-red-700 text-3xl font-semibold mb-6 ">
+        Solutions that suit you
+      </p>
+      <p class="text-lg mb-4 leading-relaxed">
+        We work collaboratively with our clients to uncover the most effective and efficient way to achieve their needs.
+      </p>
+    </div>
+    <div class="w-1/2 bg-slate-200 h-auto p-10 flex flex-col justify-center">
+      <p class="text-lg mb-4 leading-relaxed">
+        At Role Clipboard, we believe there is a better way to meet our clients' needs. We're a company that exists to help you achieve more than you ever thought possible.
+      </p>
+      <p class="text-lg mb-4 leading-relaxed">
+        Understanding all the unique touch-points of each client is essential to our business. We focus on building reliable connections, amazing results, and trusted experiences that are as useful as they are memorable.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Let's do great things together. We can't wait to work with you.
+      </p>
+    </div>
+  </div> -->
+  
+
+
+
+
+   <div class="w-[80vw] ml-12 mt-10" id="Services">
+    <p class="text-red-700 text-2xl font-semibold">Services</p>
+    <p class="font-normal text-3xl">Opportunities to grow your career</p>
+    
+</div>
+ <div class="services-grid mt-4 mb-52 flex flex-wrap justify-around ml-40 mr-12  ">
+    <a href="football.html" class="service-card mr-1 mt-10 w-[32%] h-auto bg-gray-200 mb-5 rounded-lg shadow-md text-black no-underline transition-transform duration-300 p-4 hover:scale-105 hover:shadow-lg">
+        <img src="/images/football.jpg" alt="Football" class="w-full h-auto rounded-lg mb-2">
+        <p class="service-head text-lg font-medium mt-1">Football &rsaquo;</p>
+        <p class="service-detail text-sm mt-1">Coaching, Match Analysis, Player Development</p>
+    </a>
+    <a href="basketball.html" class="service-card mr-1 mt-10 w-[32%] h-auto bg-gray-200 mb-5 rounded-lg shadow-md text-black no-underline transition-transform duration-300 p-4 hover:scale-105 hover:shadow-lg">
+        <img src="/images/basketball.jpg" alt="Basketball" class="w-full h-auto rounded-lg mb-2">
+        <p class="service-head text-lg font-medium mt-1">Basketball &rsaquo;</p>
+        <p class="service-detail text-sm mt-1">Training, Game Strategies, Skill Development</p>
+    </a>
+    <a href="volleyball.html" class="service-card mr-1 mt-10 w-[32%] h-auto bg-gray-200 mb-5 rounded-lg shadow-md text-black no-underline transition-transform duration-300 p-4 hover:scale-105 hover:shadow-lg">
+        <img src="/images/volleyball.jpg" alt="Volleyball" class="w-full h-auto rounded-lg mb-2">
+        <p class="service-head text-lg font-medium mt-1">Volleyball &rsaquo;</p>
+        <p class="service-detail text-sm mt-1">Team Coaching, Skill Training, Tournament Prep</p>
+    </a>
+</div>
+
+
+
+
+
+  
+  
+  
+  
+
+</body>
+</html>
